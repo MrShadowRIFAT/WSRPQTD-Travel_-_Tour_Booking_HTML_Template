@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!-- 
+Template Name:Travelite HTML5 Website Template
+Version: 1.0.0
+Author: PixelNX
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx">
+
+<!-- Begin Head -->
+
+<head>
+    <title>Travelite</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+    <link href="assets/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!------------- Loader start ----------->
+    <div class="tr-loader">
+        <div class="tr-spin">
+            <img src="assets/images/loader.gif" alt="loader">
+        </div>
+    </div>
+    <!------------- Loader End ----------->
+    <!------------- Header Section start ----------->
+    <div class="tr_menu_wrapper">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-4 col-sm-5 col-12">
+                    <div class="tr_menu_logo">
+                        <a href="index.html"><img src="assets/images/Logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-7 col-12">
+                    <div class="tr_navmenu_wrapper">
+                        <div class="tr_nav_menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="tour.html">Tours</a></li>
+                                <li class="active"><a href="destination.html">Destination</a></li>
+                                <li><a href="tour-guide.html">Tour Guide</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="tr_nav_btn">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#login-popup"
+                                class="tr_btn">login
+                                <span>
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="tr_toggle_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Header Section end ----------->
+    <!------------- Breadcrumb Section Start ----------->
+    <div class="tr_breadcrumb_wrapper">
+        <div class="tr_bread_overlay"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="tr_bread_content">
+                        <h2>Our Destination</h2>
+                        <div class="er_bread_list">
+                            <span>
+                                <a href="index.html">Home</a>
+                            </span>
+                            <span class="er_active_page">Destination</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------------- Breadcrumb Section end ----------->
+    <!------------- Destination places Section start ----------->
+    <div class="tr_section tr_dest_place_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="tr_destplace_img_sec">
+                        <img src="https://dummyimage.com/269x349/" alt="image">
+                        <div class="tr_destplace_tour">
+                            <span>3 Tours</span>
+                        </div>
+                        <div class="tr_destplace_content">
+                            <h3>Hungary</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="tr_destplace_img_sec">
+                        <img src="https://dummyimage.com/561x348/" alt="image">
+                        <div class="tr_destplace_tour">
+                            <span>2 Tours</span>
+                        </div>
+                        <div class="tr_destplace_content">
+                            <h3>Thailand</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="tr_destplace_img_sec">
+                        <img src="https://dummyimage.com/269x349/" alt="image">
+                        <div class="tr_destplace_tour">
+                            <span>3 Tours</span>
+                        </div>
+                        <div class="tr_destplace_content">
+                            <h3>France</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="tr_destplace_img_sec">
+                        <img src="https://dummyimage.com/269x349/" alt="image">
+                        <div class="tr_destplace_tour">
+                            <span>4 Tours</span>
+                        </div>
+                        <div class="tr_destplace_content">
+                            <h3>United Kingdom</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="tr_destplace_img_sec">
+                        <img src="https://dummyimage.com/269x349/" alt="image">
+                        <div class="tr_destplace_tour">
+                            <span>5 Tours</span>
+                        </div>
+                        <div class="tr_destplace_content">
+                            <h3>Italy</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="tr_destplace_img_sec">
+                        <img src="https://dummyimage.com/561x348/" alt="image">
+                        <div class="tr_destplace_tour">
+                            <span>3 Tours</span>
+                        </div>
+                        <div class="tr_destplace_content">
+                            <h3>Japan</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Destination places Section end ----------->
+    <!------------- Destination Travel Section end ----------->
+    <div class="tr_section tr_dest_travel_sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="tr_head_title tr_head_dtravel">
+                        <h6>Are you ready to travel?</h6>
+                        <h4>Ready to travel with real adventure and enjoy natural</h4>
+                    </div>
+                    <div class="tr_head_para tr_head_dtravel">
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="tr_desttravel_form">
+                        <h3>Book your Seat</h3>
+                        <form class="te_dtravel_form">
+                            <div class="tr_form_control">
+                                <input type="text" placeholder="Enter your name" class="form-control" name="name" />
+                            </div>
+                            <div class="tr_form_control">
+                                <input type="email" placeholder="Enter your email" class="form-control" name="email" />
+                            </div>
+                            <div class="tr_form_control">
+                                <textarea class="form-control" placeholder="Enter Your Message"
+                                    name="message"></textarea>
+                            </div>
+                            <button type="button" value="submit" class="tr_btn tr_dtravel_formbtn">Submit
+                                <span>
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                            fill="white"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Destination Travel Section end ----------->
+    <!------------- Destination Section start ----------->
+    <div class="tr_section tr_dest_section">
+        <div class="container">
+            <div class="tr_heading_section">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="tr_head_title">
+                            <h6>Top Adventure Trips</h6>
+                            <h4>Discover Top Destination</h4>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="tr_head_para">
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                officia consequat duis enim velit mollit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tr_dest_slider_section">
+                <div class="swiper tr_dest_slider swiper_common_slider ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tr_dest_sliderbox">
+                                <div class="tr_dest_img">
+                                    <img src="https://dummyimage.com/362x225/" alt="image" />
+                                    <div class="tr_dest_loc">
+                                        <img src="assets/images/location-icon.png" alt="image" />
+                                        <p>Argentina</p>
+                                    </div>
+                                </div>
+                                <div class="tr_dest_text">
+                                    <h3><a href="destination.html">Perito Moreno Glacier Trail</a></h3>
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit.</p>
+
+                                    <div class="tr_dest_review">
+                                        <div class="tr_dest_from">
+                                            <p>From : <span class="tr_from_line">$2,500</span> <span
+                                                    class="tr_from_col">$1,800</span></p>
+                                        </div>
+                                        <div class="tr_dest_rev">
+                                            <div class="tr_dest_revimg">
+                                                <img src="assets/images/Star.png" alt="icon" />
+                                                <p>4/5</p>
+                                            </div>
+                                            <p>(100 Reviews)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tr_dest_sliderbox">
+                                <div class="tr_dest_img">
+                                    <img src="https://dummyimage.com/362x225/" alt="image" />
+                                    <div class="tr_dest_loc">
+                                        <img src="assets/images/location-icon.png" alt="image" />
+                                        <p>Australia</p>
+                                    </div>
+                                </div>
+                                <div class="tr_dest_text">
+                                    <h3><a href="destination.html">San Martens</a></h3>
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis enim velit mollit.</p>
+
+                                    <div class="tr_dest_review">
+                                        <div class="tr_dest_from">
+                                            <p>From : <span class="tr_from_line">$2,500</span> <span
+                                                    class="tr_from_col">$1,800</span></p>
+                                        </div>
+                                        <div class="tr_dest_rev">
+                                            <div class="tr_dest_revimg">
+                                                <img src="assets/images/Star.png" alt="icon" />
+                                                <p>4/5</p>
+                                            </div>
+                                            <p>(100 Reviews)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tr_dest_sliderbox">
+                                <div class="tr_dest_img">
+                                    <img src="https://dummyimage.com/362x225/" alt="image" />
+                                    <div class="tr_dest_loc">
+                                        <img src="assets/images/location-icon.png" alt="image" />
+                                        <p>Brazil</p>
+                                    </div>
+                                </div>
+                                <div class="tr_dest_text">
+                                    <h3><a href="destination.html">Tour in Newyork</a></h3>
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis
+                                        enim velit mollit.</p>
+
+                                    <div class="tr_dest_review">
+                                        <div class="tr_dest_from">
+                                            <p>From : <span class="tr_from_line">$2,500</span> <span
+                                                    class="tr_from_col">$1,800</span></p>
+                                        </div>
+                                        <div class="tr_dest_rev">
+                                            <div class="tr_dest_revimg">
+                                                <img src="assets/images/Star.png" alt="icon" />
+                                                <p>4/5</p>
+                                            </div>
+                                            <p>(100 Reviews)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tr_dest_sliderbox">
+                                <div class="tr_dest_img">
+                                    <img src="https://dummyimage.com/362x225/" alt="image" />
+                                    <div class="tr_dest_loc">
+                                        <img src="assets/images/location-icon.png" alt="image" />
+                                        <p>Argentina</p>
+                                    </div>
+                                </div>
+                                <div class="tr_dest_text">
+                                    <h3><a href="destination.html">Saint Martin Island</a></h3>
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                        Velit officia consequat duis
+                                        enim velit mollit.</p>
+
+                                    <div class="tr_dest_review">
+                                        <div class="tr_dest_from">
+                                            <p>From : <span class="tr_from_line">$2,500</span> <span
+                                                    class="tr_from_col">$1,800</span></p>
+                                        </div>
+                                        <div class="tr_dest_rev">
+                                            <div class="tr_dest_revimg">
+                                                <img src="assets/images/Star.png" alt="icon" />
+                                                <p>4/5</p>
+                                            </div>
+                                            <p>(100 Reviews)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-btn-next-0">
+                    <span>
+                        <svg width="22" height="12" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="swiper-btn-prev-0">
+                    <span>
+                        <svg width="22" height="12" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.9894 7.24899L3.29946 7.25618L6.41826 10.3822C6.50892 10.4706 6.58104 10.5762 6.6304 10.6928C6.67976 10.8094 6.70536 10.9346 6.70571 11.0613C6.70307 11.2487 6.64515 11.4312 6.53923 11.5858C6.43331 11.7405 6.2841 11.8605 6.11029 11.9307C5.93648 12.0009 5.74581 12.0182 5.56218 11.9806C5.37855 11.9429 5.21014 11.8518 5.07804 11.7188L0.320791 6.96873C0.232248 6.8803 0.162006 6.77528 0.11408 6.65968C0.0661545 6.54408 0.0414867 6.42017 0.0414867 6.29503C0.0414867 6.16989 0.0661545 6.04597 0.11408 5.93037C0.162006 5.81477 0.232248 5.70976 0.320791 5.62132L5.07804 0.871259C5.97631 -0.0593519 7.35247 1.32758 6.41826 2.21867L3.2815 5.35543L20.9894 5.34825C21.1191 5.34027 21.2491 5.35893 21.3713 5.40308C21.4935 5.44723 21.6054 5.51594 21.7001 5.60497C21.7948 5.69401 21.8702 5.80148 21.9218 5.92077C21.9734 6.04007 22 6.16866 22 6.29862C22 6.42859 21.9734 6.55717 21.9218 6.67647C21.8702 6.79576 21.7948 6.90323 21.7001 6.99227C21.6054 7.0813 21.4935 7.15001 21.3713 7.19416C21.2491 7.23831 21.1191 7.25697 20.9894 7.24899Z"
+                                fill="#222222" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Destination Section end ----------->
+    <!------------- footer Section start ----------->
+    <div class="tr_footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_logo_wrapper">
+                        <div class="tr_footer_logo">
+                            <img src="assets/images/Logo.png" alt="icon" />
+                        </div>
+                        <div class="tr_footer_para">
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                officia consequat duis enim velit mollit.</p>
+                        </div>
+                        <div class="tr_footer_social">
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.16378 24.2192V13.1725H11.8702L12.4263 8.86613H8.16378V6.11714C8.16378 4.87073 8.50848 4.02132 10.2978 4.02132L12.5763 4.02038V0.168602C12.1823 0.117397 10.8297 0 9.25548 0C5.96821 0 3.71768 2.00652 3.71768 5.69064V8.86613H0V13.1725H3.71768V24.2192H8.16378Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.6419 10.2552L23.4642 0H21.3736L13.7132 8.90444L7.59486 0H0.538086L9.79021 13.4651L0.538086 24.2192H2.6288L10.7184 14.8158L17.1798 24.2192H24.2366L14.6414 10.2552H14.6419ZM11.7784 13.5837L10.8409 12.2429L3.38212 1.57385H6.59334L12.6127 10.1841L13.5501 11.5249L21.3746 22.717H18.1633L11.7784 13.5842V13.5837Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>>
+                            </div>
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="20" height="25" viewBox="0 0 20 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3463 0C3.70717 0.00100914 0.178223 4.25451 0.178223 8.8925C0.178223 11.043 1.3801 13.7263 3.30452 14.577C3.85349 14.8242 3.78083 14.5225 4.25311 12.7161C4.27485 12.6431 4.27677 12.5657 4.25868 12.4918C4.24059 12.4178 4.20314 12.35 4.15018 12.2953C1.39928 9.1135 3.61332 2.57229 9.95371 2.57229C19.1298 2.57229 17.4153 15.2692 11.5502 15.2692C10.0385 15.2692 8.91229 14.0825 9.26851 12.6142C9.70042 10.8654 10.5461 8.98534 10.5461 7.72493C10.5461 4.54817 5.81323 5.01944 5.81323 9.22854C5.81323 10.5293 6.2734 11.4073 6.2734 11.4073C6.2734 11.4073 4.75061 17.5589 4.46805 18.7084C3.98973 20.654 4.53264 23.8035 4.58007 24.0749C4.60933 24.2243 4.77685 24.2717 4.8707 24.1486C5.02106 23.9518 6.86172 21.3261 7.37739 19.4279C7.56509 18.7366 8.33506 15.9312 8.33506 15.9312C8.84266 16.8475 10.3059 17.6145 11.865 17.6145C16.503 17.6145 19.8553 13.5375 19.8553 8.47875C19.8392 3.62885 15.6886 0 10.3463 0Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>>
+                            </div>
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.9452 0H6.83591C3.50614 0 0.78125 2.72489 0.78125 6.05466V18.1646C0.78125 21.4935 3.50614 24.2192 6.83591 24.2192H18.9452C22.275 24.2192 24.9999 21.4935 24.9999 18.1646V6.05466C24.9999 2.72489 22.275 0 18.9452 0ZM22.9816 18.1646C22.9816 20.3897 21.1716 22.2009 18.9452 22.2009H6.83591C4.61053 22.2009 2.79957 20.3897 2.79957 18.1646V6.05466C2.79957 3.82898 4.61053 2.01832 6.83591 2.01832H18.9452C21.1716 2.01832 22.9816 3.82898 22.9816 6.05466V18.1646Z"
+                                            fill="white" />
+                                        <path
+                                            d="M19.4517 7.06395C20.2876 7.06395 20.9653 6.38626 20.9653 5.55029C20.9653 4.71431 20.2876 4.03662 19.4517 4.03662C18.6157 4.03662 17.938 4.71431 17.938 5.55029C17.938 6.38626 18.6157 7.06395 19.4517 7.06395Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.8908 6.05469C9.54623 6.05469 6.83618 8.76504 6.83618 12.1093C6.83618 15.4524 9.54623 18.1646 12.8908 18.1646C16.2345 18.1646 18.9455 15.4524 18.9455 12.1093C18.9455 8.76504 16.2345 6.05469 12.8908 6.05469ZM12.8908 16.1463C10.6618 16.1463 8.8545 14.339 8.8545 12.1093C8.8545 9.87971 10.6618 8.07301 12.8908 8.07301C15.1199 8.07301 16.9272 9.87971 16.9272 12.1093C16.9272 14.339 15.1199 16.1463 12.8908 16.1463Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_link">
+                        <h3>Important Link</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="javascript:void(0);">Trip Plan</a></li>
+                            <li><a href="javascript:void(0);">Privacy</a></li>
+                            <li><a href="blog.html">Blog & Tag</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_link">
+                        <h3>Destination</h3>
+                        <ul>
+                            <li><a href="tour.html">Egypt Tour</a></li>
+                            <li><a href="tour.html">New York Tour</a></li>
+                            <li><a href="tour.html">Indonesia Tour</a></li>
+                            <li><a href="tour.html">Nepal Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_link tr_footer_news_wrapper">
+                        <h3>Our Newsletter</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia.
+                        </p>
+                        <form method="" class="tr_form_sec">
+                            <div class="tr_form_input">
+                                <input type="email" class="form-control" placeholder="Email Here..." name="email">
+                            </div>
+                            <div class="tr_form_btn">
+                                <img src="assets/images/subscribe.png" alt="icon" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- footer Section end ----------->
+    <!------------- Copyright Section start ----------->
+    <div class="tr_copyright_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="tr_copy_para">
+                        <p>Copyright ©2024 Travellers. All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Copyright Section end ----------->
+    <!-- modal login start-->
+    <div class="modal fade login-modal" id="login-popup" tabindex="-1" aria-labelledby="login-popupmodal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tr_login_popup" id="tr_login_popup">
+                        <div class="form-container sign-up-container">
+                            <form class="" metdod="" action="">
+                                <div class="tr-signup_form">
+                                    <h2>Create Account</h2>
+                                    <p>(Use your email for registration)</p>
+                                    <div class="tr-inputfield">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control require" placeholder="Enter Your Name"
+                                            name="firstname" required>
+                                    </div>
+                                    <div class="tr-inputfield">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control require" placeholder="Enter Your Email"
+                                            name="email" required>
+                                    </div>
+                                    <div class="tr-inputfield">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control require"
+                                            placeholder="Enter Your Password" name="password">
+                                    </div>
+                                    <button type="button" class="tr_btn tr_con_btn submitForm">sign up
+                                        <span>
+                                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="" method="" action="">
+                                <div class="tr-login_form">
+                                    <h2>Sign In To Your Account</h2>
+                                    <p>(Use your email for registration)</p>
+                                    <div class="tr-inputfield">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control require" placeholder="Enter Your Email"
+                                            name="email" data-valid="email" data-error="Email should be valid.">
+                                    </div>
+                                    <div class="tr-inputfield">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control require"
+                                            placeholder="Enter Your Password" name="password">
+                                    </div>
+                                    <button type="button" class="tr_btn tr_con_btn submitForm">sign in
+                                        <span>
+                                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tr_overlay_container">
+                            <div class="tr_overlay">
+                                <div class="tr_overlay_panel overlay_left">
+                                    <h2>Have an account</h2>
+                                    <p>Click on Sign Up button to create a new account.</p>
+                                    <div class="tr_login_btn">
+                                        <a href="#" class="tr_btn" id="signIn">sign in</a>
+                                    </div>
+                                </div>
+                                <div class="tr_overlay_panel overlay_right">
+                                    <h2>Sign Up</h2>
+                                    <p>Click on Sign Up button to create a new account.</p>
+                                    <div class="tr_login_btn">
+                                        <a href="#" class="tr_btn" id="signUp">sign up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal login end-->
+    <!-- custom link  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- 
+Template Name:Travelite HTML5 Website Template
+Version: 1.0.0
+Author: PixelNX
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx">
+
+<!-- Begin Head -->
+
+<head>
+    <title>Travelite</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+    <link href="assets/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!------------- Loader start ----------->
+    <div class="tr-loader">
+        <div class="tr-spin">
+            <img src="assets/images/loader.gif" alt="loader">
+        </div>
+    </div>
+    <!------------- Loader End ----------->
+    <!------------- Header Section start ----------->
+    <div class="tr_menu_wrapper">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-4 col-sm-5 col-12">
+                    <div class="tr_menu_logo">
+                        <a href="index.html"><img src="assets/images/Logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-7 col-12">
+                    <div class="tr_navmenu_wrapper">
+                        <div class="tr_nav_menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="tour.html">Tours</a></li>
+                                <li><a href="destination.html">Destination</a></li>
+                                <li><a href="tour-guide.html">Tour Guide</a></li>
+                                <li class="active"><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="tr_nav_btn">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#login-popup" class="tr_btn">
+                                login
+                                <span>
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="tr_toggle_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Header Section end ----------->
+    <!------------- Breadcrumb Section Start ----------->
+    <div class="tr_breadcrumb_wrapper">
+        <div class="tr_bread_overlay"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="tr_bread_content">
+                        <h2>Blog Single</h2>
+                        <div class="er_bread_list">
+                            <span>
+                                <a href="index.html">Home</a>
+                            </span>
+                            <span>
+                                <a href="blog.html">Blog</a>
+                            </span>
+                            <span class="er_active_page">Blog Single</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------------- Breadcrumb Section end ----------->
+
+    <!------------- Blog single Section start ----------->
+    <div class="tr_blog_single_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="tr_blogsingle_page">
+                        <div class="tr_post_img">
+                            <img src="https://dummyimage.com/756x371/" alt="" class="img-responsive">
+                        </div>
+                        <div class="tr_post_detail">
+                            <div class="tr_post_data">
+                                <span class="post_like"><a href="javascript:void(0);">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                                                viewBox="0 0 460.8 460.8" style="enable-background:new 0 0 512 512"
+                                                xml:space="preserve" height="16" width="16">
+                                                <g>
+                                                    <path
+                                                        d="M230.432 0c-65.829 0-119.641 53.812-119.641 119.641s53.812 119.641 119.641 119.641 119.641-53.812 119.641-119.641S296.261 0 230.432 0zM435.755 334.89c-3.135-7.837-7.314-15.151-12.016-21.943-24.033-35.527-61.126-59.037-102.922-64.784-5.224-.522-10.971.522-15.151 3.657-21.943 16.196-48.065 24.555-75.233 24.555s-53.29-8.359-75.233-24.555c-4.18-3.135-9.927-4.702-15.151-3.657-41.796 5.747-79.412 29.257-102.922 64.784-4.702 6.792-8.882 14.629-12.016 21.943-1.567 3.135-1.045 6.792.522 9.927 4.18 7.314 9.404 14.629 14.106 20.898 7.314 9.927 15.151 18.808 24.033 27.167 7.314 7.314 15.673 14.106 24.033 20.898 41.273 30.825 90.906 47.02 142.106 47.02s100.833-16.196 142.106-47.02c8.359-6.269 16.718-13.584 24.033-20.898 8.359-8.359 16.718-17.241 24.033-27.167 5.224-6.792 9.927-13.584 14.106-20.898 2.611-3.135 3.133-6.793 1.566-9.927z"
+                                                        fill="currentColor" opacity="1" data-original="#000000" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        Post By - John </a></span>
+                                <span class="post_like"><a href="javascript:void(0);">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                                                viewBox="0 0 34 34" style="enable-background:new 0 0 512 512"
+                                                xml:space="preserve" height="16" width="16">
+                                                <g>
+                                                    <path
+                                                        d="M29.6 2h-3v3c0 .6-.5 1-1 1s-1-.4-1-1V2h-16v3c0 .6-.5 1-1 1s-1-.4-1-1V2h-3C2.1 2 1 3.3 1 5v3.6h32V5c0-1.7-1.8-3-3.4-3zM1 10.7V29c0 1.8 1.1 3 2.7 3h26c1.6 0 3.4-1.3 3.4-3V10.7zm8.9 16.8H7.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8H10c.4 0 .8.3.8.8v2.5c-.1.5-.4.8-.9.8zm0-9H7.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8H10c.4 0 .8.3.8.8v2.5c-.1.5-.4.8-.9.8zm8 9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8zm0-9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8zm8 9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8zm0-9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8z"
+                                                        fill="currentColor" opacity="1" data-original="#000000" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        24 March 2024
+                                    </a></span>
+                            </div>
+                            <h5 class="post_title"><a href="javascript:void(0);"> Air Purifying Plants</a></h5>
+                            <p>Sed orci dolor, pulvinar nec luctus a, malesuada ac nisl. Aliquam eleifend et dui et
+                                suscipit. Nam semper accumsan ante, ac dapibus urna dapibus et. Aenean lobortis viverra
+                                nibh in porttitor. Aenean vel eros posuere, laoreet ligula et, lobortis tellus. Morbi
+                                quis nunc in risus ornare egestas et ac libero. Donec egestas nunc massa, ac euismod
+                                odio posuere sit amet.</p>
+
+                            <p>Ut interdum nisi lectus, eget aliquet quam sagittis et. Nam volutpat convallis sem vel
+                                lobortis. Nullam consectetur dolor urna, eget ultricies enim eleifend sit amet. Sed orci
+                                dolor, pulvinar nec luctus a, malesuada ac nisl. Aliquam eleifend et dui et suscipit.
+                                Nam semper accumsan ante, ac dapibus urna dapibus et. </p>
+                            <p>Aenean lobortis viverra nibh in porttitor. Aenean vel eros posuere, laoreet ligula et,
+                                lobortis tellus. Morbi quis nunc in risus ornare egestas et ac libero. Donec egestas
+                                nunc massa, ac euismod odio posuere sit amet. Ut interdum nisi lectus, eget aliquet quam
+                                sagittis et. Nam volutpat convallis sem vel lobortis. Nullam consectetur dolor urna,
+                                eget ultricies enim eleifend sit amet.</p>
+                            <div class="tr_blockquote">
+                                <blockquote class="blockquote">
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tr_blog_data">
+                                <div class="tr_blog_para">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour Nemo enim ipsam
+                                        voluptatem quia voluptas sit aspernatur aut odit</p>
+                                    <p>randomised words which don't look even slightly believable. If you are going to
+                                        use a passage of Lorem Ipsum. Nemo enim ipsam voluptatem quia voluptas sit
+                                        aspernatur aut odit</p>
+                                </div>
+                            </div>
+                            <div class="tr_blog_post">
+                                <h3 class="post_heading">Posted by Admin</h3>
+                                <div class="tr_post_div">
+                                    <div class="review_author">
+                                        <img src="https://dummyimage.com/116x116/" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="tr_blog_post_para">
+                                        <h3>Marion Alvarado</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                            veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="post_heading">comments</h3>
+                            <div class="comment">
+                                <div class="comment-author">
+                                    <img src="https://dummyimage.com/94x94/" alt="" class="img-responsive">
+                                </div>
+                                <div class="comment-text">
+                                    <div><span class="comment-author-name">Jhini Snow</span><span
+                                            class="comment-date">15.04.2023</span></div>
+                                    <p>Happiness is the universal feeling we all aspire to experience more of, yet, we
+                                        can be an angry, moody, depressed bunch, can’t we.</p>
+                                    <a href="javascriptvoid:;" class="comment-reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comment comment--replied">
+                                <div class="comment-author">
+                                    <img src="https://dummyimage.com/92x92/" alt="" class="img-responsive">
+                                </div>
+                                <div class="comment-text">
+                                    <div><span class="comment-author-name">steffi Smith</span><span
+                                            class="comment-date">23.05.2023</span></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur
+                                        passage of Lorem Ipsum vel
+                                        quam sit amet luctus.</p>
+                                    <a href="javascriptvoid:;" class="comment-reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comment ">
+                                <div class="comment-author">
+                                    <img src="https://dummyimage.com/94x94/" alt="" class="img-responsive">
+                                </div>
+                                <div class="comment-text">
+                                    <div><span class="comment-author-name">Jhini Snow</span><span
+                                            class="comment-date">25.07.2023</span></div>
+                                    <p>Curabitur venenatis et ante id consequat. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Suspendisse non blandit dolor.</p>
+                                    <a href="javascriptvoid:;" class="comment-reply">Reply</a>
+                                </div>
+                            </div>
+
+                            <div class="tr_comments">
+                                <div class="comments-form">
+                                    <h3>Leave A Comments</h3>
+                                    <div class="wed_contact_bg">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <div class="tr-inputfield">
+                                                        <input type="text" class="form-control require"
+                                                            placeholder="Enter Your Name" name="full_name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <div class="tr-inputfield">
+                                                        <input type="text" class="form-control require"
+                                                            placeholder="Enter Your Email" name="email"
+                                                            data-valid="email" data-error="Email should be valid.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="tr-inputfield">
+                                                        <textarea placeholder="Enter Your Message..."
+                                                            class="form-control form-textarea require" name="message"
+                                                            id="message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <button type="button" class="tr_btn tr_con_btn submitForm">Submit
+                                                        <span>
+                                                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                                                    fill="white"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <div class="response"></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="tr_search_wrapper">
+                        <div class="tr_blogsing_box">
+                            <div class="tr_search_box">
+                                <input type="search" placeholder="search..." class="form-control">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                                        viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" height="16" width="16">
+                                        <g>
+                                            <path
+                                                d="M55.146 51.887 41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"
+                                                fill="currentColor" opacity="1" data-original="#000000" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tr_blogsing_box">
+                            <h4>Recent Post</h4>
+                            <div class="tr_footer_news tr_blsing_post">
+                                <div class="tr_ftnews_img">
+                                    <img src="https://dummyimage.com/88x88/" alt="news">
+                                </div>
+                                <div class="tr_ftnews_text">
+                                    <h4>There Are Many Variations Passages</h4>
+                                    <span>
+                                        <img src="assets/images/date-icon.png" alt="news">
+                                        <p>Jan 06, 2024</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="tr_footer_news tr_blsing_post">
+                                <div class="tr_ftnews_img">
+                                    <img src="https://dummyimage.com/88x88/" alt="news">
+                                </div>
+                                <div class="tr_ftnews_text">
+                                    <h4>The point of using Lorem Ipsum</h4>
+                                    <span>
+                                        <img src="assets/images/date-icon.png" alt="news">
+                                        <p>Jan 06, 2024</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="tr_footer_news tr_blsing_post">
+                                <div class="tr_ftnews_img">
+                                    <img src="https://dummyimage.com/88x88/" alt="news">
+                                </div>
+                                <div class="tr_ftnews_text">
+                                    <h4>The leap into electronic typesetting</h4>
+                                    <span>
+                                        <img src="assets/images/date-icon.png" alt="news">
+                                        <p>Jan 06, 2024</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="tr_footer_news tr_blsing_post">
+                                <div class="tr_ftnews_img">
+                                    <img src="https://dummyimage.com/88x88/" alt="news">
+                                </div>
+                                <div class="tr_ftnews_text">
+                                    <h4>It has survived not only five centuries</h4>
+                                    <span>
+                                        <img src="assets/images/date-icon.png" alt="news">
+                                        <p>Jan 06, 2024</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Blog single Section end ----------->
+    <!------------- footer Section start ----------->
+    <div class="tr_footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_logo_wrapper">
+                        <div class="tr_footer_logo">
+                            <img src="assets/images/Logo.png" alt="icon" />
+                        </div>
+                        <div class="tr_footer_para">
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                officia consequat duis enim velit mollit.</p>
+                        </div>
+                        <div class="tr_footer_social">
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.16378 24.2192V13.1725H11.8702L12.4263 8.86613H8.16378V6.11714C8.16378 4.87073 8.50848 4.02132 10.2978 4.02132L12.5763 4.02038V0.168602C12.1823 0.117397 10.8297 0 9.25548 0C5.96821 0 3.71768 2.00652 3.71768 5.69064V8.86613H0V13.1725H3.71768V24.2192H8.16378Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.6419 10.2552L23.4642 0H21.3736L13.7132 8.90444L7.59486 0H0.538086L9.79021 13.4651L0.538086 24.2192H2.6288L10.7184 14.8158L17.1798 24.2192H24.2366L14.6414 10.2552H14.6419ZM11.7784 13.5837L10.8409 12.2429L3.38212 1.57385H6.59334L12.6127 10.1841L13.5501 11.5249L21.3746 22.717H18.1633L11.7784 13.5842V13.5837Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>>
+                            </div>
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="20" height="25" viewBox="0 0 20 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3463 0C3.70717 0.00100914 0.178223 4.25451 0.178223 8.8925C0.178223 11.043 1.3801 13.7263 3.30452 14.577C3.85349 14.8242 3.78083 14.5225 4.25311 12.7161C4.27485 12.6431 4.27677 12.5657 4.25868 12.4918C4.24059 12.4178 4.20314 12.35 4.15018 12.2953C1.39928 9.1135 3.61332 2.57229 9.95371 2.57229C19.1298 2.57229 17.4153 15.2692 11.5502 15.2692C10.0385 15.2692 8.91229 14.0825 9.26851 12.6142C9.70042 10.8654 10.5461 8.98534 10.5461 7.72493C10.5461 4.54817 5.81323 5.01944 5.81323 9.22854C5.81323 10.5293 6.2734 11.4073 6.2734 11.4073C6.2734 11.4073 4.75061 17.5589 4.46805 18.7084C3.98973 20.654 4.53264 23.8035 4.58007 24.0749C4.60933 24.2243 4.77685 24.2717 4.8707 24.1486C5.02106 23.9518 6.86172 21.3261 7.37739 19.4279C7.56509 18.7366 8.33506 15.9312 8.33506 15.9312C8.84266 16.8475 10.3059 17.6145 11.865 17.6145C16.503 17.6145 19.8553 13.5375 19.8553 8.47875C19.8392 3.62885 15.6886 0 10.3463 0Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>>
+                            </div>
+                            <div class="tr_footer_icon">
+                                <span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.9452 0H6.83591C3.50614 0 0.78125 2.72489 0.78125 6.05466V18.1646C0.78125 21.4935 3.50614 24.2192 6.83591 24.2192H18.9452C22.275 24.2192 24.9999 21.4935 24.9999 18.1646V6.05466C24.9999 2.72489 22.275 0 18.9452 0ZM22.9816 18.1646C22.9816 20.3897 21.1716 22.2009 18.9452 22.2009H6.83591C4.61053 22.2009 2.79957 20.3897 2.79957 18.1646V6.05466C2.79957 3.82898 4.61053 2.01832 6.83591 2.01832H18.9452C21.1716 2.01832 22.9816 3.82898 22.9816 6.05466V18.1646Z"
+                                            fill="white" />
+                                        <path
+                                            d="M19.4517 7.06395C20.2876 7.06395 20.9653 6.38626 20.9653 5.55029C20.9653 4.71431 20.2876 4.03662 19.4517 4.03662C18.6157 4.03662 17.938 4.71431 17.938 5.55029C17.938 6.38626 18.6157 7.06395 19.4517 7.06395Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.8908 6.05469C9.54623 6.05469 6.83618 8.76504 6.83618 12.1093C6.83618 15.4524 9.54623 18.1646 12.8908 18.1646C16.2345 18.1646 18.9455 15.4524 18.9455 12.1093C18.9455 8.76504 16.2345 6.05469 12.8908 6.05469ZM12.8908 16.1463C10.6618 16.1463 8.8545 14.339 8.8545 12.1093C8.8545 9.87971 10.6618 8.07301 12.8908 8.07301C15.1199 8.07301 16.9272 9.87971 16.9272 12.1093C16.9272 14.339 15.1199 16.1463 12.8908 16.1463Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_link">
+                        <h3>Important Link</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="javascript:void(0);">Trip Plan</a></li>
+                            <li><a href="javascript:void(0);">Privacy</a></li>
+                            <li><a href="blog.html">Blog & Tag</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_link">
+                        <h3>Destination</h3>
+                        <ul>
+                            <li><a href="tour.html">Egypt Tour</a></li>
+                            <li><a href="tour.html">New York Tour</a></li>
+                            <li><a href="tour.html">Indonesia Tour</a></li>
+                            <li><a href="tour.html">Nepal Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="tr_footer_link tr_footer_news_wrapper">
+                        <h3>Our Newsletter</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia.
+                        </p>
+                        <form method="" class="tr_form_sec">
+                            <div class="tr_form_input">
+                                <input type="email" class="form-control" placeholder="Email Here..." name="email">
+                            </div>
+                            <div class="tr_form_btn">
+                                <img src="assets/images/subscribe.png" alt="icon" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- footer Section end ----------->
+    <!------------- Copyright Section start ----------->
+    <div class="tr_copyright_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="tr_copy_para">
+                        <p>Copyright ©2024 Travellers. All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Copyright Section end ----------->
+    <!-- modal login start-->
+    <div class="modal fade login-modal" id="login-popup" tabindex="-1" aria-labelledby="login-popupmodal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tr_login_popup" id="tr_login_popup">
+                        <div class="form-container sign-up-container">
+                            <form class="" metdod="" action="">
+                                <div class="tr-signup_form">
+                                    <h2>Create Account</h2>
+                                    <p>(Use your email for registration)</p>
+                                    <div class="tr-inputfield">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control require" placeholder="Enter Your Name"
+                                            name="firstname" required>
+                                    </div>
+                                    <div class="tr-inputfield">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control require" placeholder="Enter Your Email"
+                                            name="email" required>
+                                    </div>
+                                    <div class="tr-inputfield">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control require"
+                                            placeholder="Enter Your Password" name="password">
+                                    </div>
+                                    <button type="button" class="tr_btn tr_con_btn submitForm">sign up
+                                        <span>
+                                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="" method="" action="">
+                                <div class="tr-login_form">
+                                    <h2>Sign In To Your Account</h2>
+                                    <p>(Use your email for registration)</p>
+                                    <div class="tr-inputfield">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control require" placeholder="Enter Your Email"
+                                            name="email" data-valid="email" data-error="Email should be valid.">
+                                    </div>
+                                    <div class="tr-inputfield">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control require"
+                                            placeholder="Enter Your Password" name="password">
+                                    </div>
+                                    <button type="button" class="tr_btn tr_con_btn submitForm">sign in
+                                        <span>
+                                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.01063 7.24899L18.7005 7.25618L15.5817 10.3822C15.4911 10.4706 15.419 10.5762 15.3696 10.6928C15.3202 10.8094 15.2946 10.9346 15.2943 11.0613C15.2969 11.2487 15.3548 11.4312 15.4608 11.5858C15.5667 11.7405 15.7159 11.8605 15.8897 11.9307C16.0635 12.0009 16.2542 12.0182 16.4378 11.9806C16.6214 11.9429 16.7899 11.8518 16.922 11.7188L21.6792 6.96873C21.7678 6.8803 21.838 6.77528 21.8859 6.65968C21.9338 6.54408 21.9585 6.42017 21.9585 6.29503C21.9585 6.16989 21.9338 6.04597 21.8859 5.93037C21.838 5.81477 21.7678 5.70976 21.6792 5.62132L16.922 0.871259C16.0237 -0.0593519 14.6475 1.32758 15.5817 2.21867L18.7185 5.35543L1.01063 5.34825C0.880913 5.34027 0.750933 5.35893 0.628697 5.40308C0.506462 5.44723 0.394559 5.51594 0.299881 5.60497C0.205203 5.69401 0.129754 5.80148 0.0781803 5.92077C0.0266066 6.04007 0 6.16866 0 6.29862C0 6.42859 0.0266066 6.55717 0.0781803 6.67647C0.129754 6.79576 0.205203 6.90323 0.299881 6.99227C0.394559 7.0813 0.506462 7.15001 0.628697 7.19416C0.750933 7.23831 0.880913 7.25697 1.01063 7.24899Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tr_overlay_container">
+                            <div class="tr_overlay">
+                                <div class="tr_overlay_panel overlay_left">
+                                    <h2>Have an account</h2>
+                                    <p>Click on Sign Up button to create a new account.</p>
+                                    <div class="tr_login_btn">
+                                        <a href="#" class="tr_btn" id="signIn">sign in</a>
+                                    </div>
+                                </div>
+                                <div class="tr_overlay_panel overlay_right">
+                                    <h2>Sign Up</h2>
+                                    <p>Click on Sign Up button to create a new account.</p>
+                                    <div class="tr_login_btn">
+                                        <a href="#" class="tr_btn" id="signUp">sign up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal login end-->
+
+    <!-- custom link  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
